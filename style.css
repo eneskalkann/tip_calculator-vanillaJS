@@ -1,0 +1,35 @@
+*{
+    margin:auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-calculate{
+    display: flex;
+    max-width: 600px;
+    background-color: azure;
+    background-size: 100%;
+    border-radius: 16px;
+}
+
+.container-calculate-left{
+    margin:25px;
+}
+
+.container-calculate-right{
+    background-color: hsl(183, 100%, 15%);
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    margin: 20px 20px 20px 0;
+}

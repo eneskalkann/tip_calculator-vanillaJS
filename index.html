@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tip Calculator</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="./images/logo.svg" alt="splitter" />
+      <div class="container-calculate">
+        <div class="container-calculate-left">
+          <div class="bill-input">
+            <h2>Bill</h2>
+            <input type="text" id="billInput" placeholder="0" class="inputs" />
+          </div>
+          <div class="tip-percent">
+            <h2>Select Tip %</h2>
+            <div class="percent">
+              <div class="percent-top">
+                <button>5%</button>
+                <button>10%</button>
+                <button>15%</button>
+              </div>
+              <div class="percent-bottom">
+                <button>25%</button>
+                <button>50%</button>
+                <input
+                  type="text"
+                  id="tipPercent"
+                  placeholder="Custom"
+                  class="percent-input"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="number-people">
+            <h2>Number of People</h2>
+            <input
+              type="text"
+              id="numberOfPeople"
+              placeholder="0"
+              class="inputs"
+            />
+          </div>
+        </div>
+        <div class="container-calculate-right">
+          <div class="amount">
+            <div class="per-person">
+              <h5>Tip Amount</h5>
+              <span>/person</span>
+            </div>
+            <img src="/images/icon-dollar.svg" alt="" />
+          </div>
+          <div class="total">
+            <div class="per-person">
+              <h5>Total</h5>
+              <span>/person</span>
+            </div>
+            <img src="/images/icon-dollar.svg" alt="" />
+          </div>
+          <div class="reset">
+            <button>RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
 </html>
