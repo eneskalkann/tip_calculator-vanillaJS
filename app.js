@@ -17,7 +17,7 @@ const calculate = () => {
     perPersonTotal.innerText = `${totalPerPeople.toFixed(2)}`
 }
 
-function reset () {
+const reset = () => {
     billInput.value="";
     numberOfPeople.value="";
     tipPercent.value="";
