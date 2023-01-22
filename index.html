@@ -1,72 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tip Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <img src="./images/logo.svg" alt="splitter" />
-      <div class="container-calculate">
-        <div class="container-calculate-left">
-          <div class="bill-input">
-            <h2>Bill</h2>
-            <input type="text" id="billInput" placeholder="0" class="inputs" />
-          </div>
-          <div class="tip-percent">
-            <h2>Select Tip %</h2>
-            <div class="percent">
-              <div class="percent-top">
-                <button>5%</button>
-                <button>10%</button>
-                <button>15%</button>
-              </div>
-              <div class="percent-bottom">
-                <button>25%</button>
-                <button>50%</button>
-                <input
-                  type="text"
-                  id="tipPercent"
-                  placeholder="Custom"
-                  class="percent-input"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="number-people">
-            <h2>Number of People</h2>
-            <input
-              type="text"
-              id="numberOfPeople"
-              placeholder="0"
-              class="inputs"
-            />
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-calculate">
+      <div class="container-calculate-left">
+        <div class="bill-input">
+          <h2>Enter Bill</h2>
+          <input type="text" id="billInput" placeholder="0" class="inputs" />
         </div>
-        <div class="container-calculate-right">
+        <div class="tip-percent">
+          <h2>Tip Percentage</h2>
+          <input type="text" placeholder="0" id="tipPercent">
+        </div>
+        <div class="number-people">
+          <h2>Number of People</h2>
+          <input type="text" id="numberOfPeople" placeholder="0" class="inputs" />
+        </div>
+      </div>
+      <div class="container-calculate-right">
+        <div class="right-container" style="color: #ccc5b9;">
           <div class="amount">
-            <div class="per-person">
+            <div class="per-person" style="display: flex; flex-direction: column; align-items: flex-start; width: 100px;">
               <h5>Tip Amount</h5>
               <span>/person</span>
             </div>
-            <img src="/images/icon-dollar.svg" alt="" />
+            <div class="per-costs">
+              <div class="total" id="perPersonTotal" style="font-size: 24px;">0.00</div>
+            </div>
           </div>
           <div class="total">
-            <div class="per-person">
+            <div class="per-person" style="display: flex; flex-direction: column; align-items: flex-start; width: 100px;">
               <h5>Total</h5>
               <span>/person</span>
             </div>
-            <img src="/images/icon-dollar.svg" alt="" />
+            <div class="per-costs">
+              <div class="total" id="perPersonTotal" style="font-size: 24px;">0.00</div>
+            </div>
           </div>
           <div class="reset">
-            <button>RESET</button>
+            <button class="reset-button" id="reset-button" style="color: #403d39; font-weight: bold; background-color: #ccc5b9; border: none; padding: 10px 30px; border-radius: 8px;">RESET</button>
           </div>
         </div>
       </div>
     </div>
-  </body>
-  <script src="app.js"></script>
+  </div>
+</body>
+<script src="app.js"></script>
+
 </html>

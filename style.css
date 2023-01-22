@@ -1,35 +1,66 @@
 *{
-    margin:auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    background-color: hsl(185, 41%, 84%);
-    height: 100vh;
-    width: 100vw;
-}
-
-.container{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eb5e28;
+    width: 100vw;
+    height: 100vh;
 }
 
 .container-calculate{
     display: flex;
-    max-width: 600px;
-    background-color: azure;
-    background-size: 100%;
-    border-radius: 16px;
 }
 
 .container-calculate-left{
-    margin:25px;
+    background-color: #ccc5b9;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 300px;
+    height: 210px;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    background-color: #403d39;
+    color: #ccc5b9;
 }
 
 .container-calculate-right{
-    background-color: hsl(183, 100%, 15%);
-    width: 250px;
-    height: 250px;
-    border-radius: 16px;
-    margin: 20px 20px 20px 0;
+    background-color:#403d39;
+    padding: 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 200px;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.amount{
+    display: flex;
+}
+
+h2{
+    color: #403d39;
+    
+}
+
+.total , .amount{
+    display: flex;
+    align-items: center;
+    gap: 60px;
 }
