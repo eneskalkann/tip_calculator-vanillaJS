@@ -64,3 +64,13 @@ h2{
     align-items: center;
     gap: 20px;
 }
+
+button{
+    cursor:pointer; 
+    color: #403d39; 
+    font-weight: bold; 
+    background-color: #ccc5b9;
+    border: none; 
+    padding: 10px 30px; 
+    border-radius: 8px;
+}
