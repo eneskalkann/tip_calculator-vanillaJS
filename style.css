@@ -91,4 +91,9 @@ button{
     border: none; 
     padding: 10px 30px; 
     border-radius: 8px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #eb5e28;
 }
