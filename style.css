@@ -62,5 +62,5 @@ h2{
 .total , .amount{
     display: flex;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
 }
